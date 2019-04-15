@@ -8,12 +8,11 @@ app.use(cors())
 process.env.SECRET_KEY = 'secret'
 
 let connection = mysql.createPool({
-    host: 'localhost',
+    host: "localhost",
     user: 'root',
     password: '',
     database: 'eatwise',
-    connectionLimit: 100,
-    debug: false
+    connectionLimit: 100
 });
 
 // instantiate controllers
